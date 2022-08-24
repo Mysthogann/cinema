@@ -10,6 +10,9 @@
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
    <link rel="stylesheet" href="/webCinema/CSS/style.css">
+   <script src="https://code.jquery.com/jquery-1.9.1.min.js" defer></script>
+   <script type="module" src="/webCinema/JS/modulos/index.mjs" defer></script>
+   <script type="text/javascript" src="/webCinema/JS/metodos/redirectMain.js" defer></script>
    <title>Moviecinema</title>
 </head>
 <body>
@@ -39,23 +42,23 @@
    </div>
 
    <div class="movie-list-container">
-      <h1 id="hola" class="movie-list-title">Peliculas</h1>
+      <h1 class="movie-list-title">Peliculas</h1>
       <div class="movie-list-wrapper">
          <div class="movie-list" >
             <div class="movie-list-item">
-               <h1 class="movie-list-item-title">Dragon Ball Super: Super Hero</h1>
+               <h1 id="db" class="movie-list-item-title"></h1>
                <img id="mov1" class="movie-list-item-img" src="/webCinema/img/dragon_ball1.webp" alt="">            
             </div>
             <div class="movie-list-item">
-               <h1 class="movie-list-item-title">Ant-Man and the Wasp: Quantumania</h1>
+               <h1 id="ant" class="movie-list-item-title"></h1>
                <img id="mov2" class="movie-list-item-img" src="/webCinema/img/ant_man.jpeg" alt="">
             </div>
             <div class="movie-list-item">
-               <h1 class="movie-list-item-title">Thor: Love and Thunder</h1>
+               <h1 id="thor" class="movie-list-item-title"></h1>
                <img id="mov3" class="movie-list-item-img" src="/webCinema/img/thor_love.jpg" alt="">
             </div>
             <div class="movie-list-item">
-               <h1 class="movie-list-item-title">Tren Bala</h1>
+               <h1 id="tb" class="movie-list-item-title"></h1>
                <img id="mov4" class="movie-list-item-img" src="/webCinema/img/tren_bala.jpg" alt="">
             </div>
          </div>
@@ -66,5 +69,4 @@
       <p>Footer</p>
     </div>
 </body>
-<script type="text/javascript" src="/webCinema/JS/redirect/redirectMain.js"></script>
 </html>
