@@ -1,9 +1,6 @@
-import pel from '../peliculas.js';
-const {dragonBall, antMan, thor, trenBala} = pel;
+import peliculas from '../peliculas.mjs'; // Peliculas va a ser el objeto de peliculas para ver todo lo que contiene
 
-document.getElementById("db").innerHTML = pel.dragonBall[1];
-document.getElementById("ant").innerHTML = pel.antMan[1];
-document.getElementById("thor").innerHTML = pel.thor[1];
-document.getElementById("tb").innerHTML = pel.trenBala[1];
-
-//console.log(pel.dragonBall)
+document.getElementById("db").innerHTML = peliculas.dragonBall.nombre;
+document.getElementById("ant").innerHTML = peliculas.antMan.nombre;
+document.getElementById("thor").innerHTML = peliculas.thor.nombre;
+document.getElementById("tb").innerHTML = peliculas.trenBala.nombre;
