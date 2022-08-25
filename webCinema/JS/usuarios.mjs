@@ -3,8 +3,8 @@ import peliculas from './peliculas.mjs'; // Peliculas va a ser el objeto de peli
 const usuario1 = {
    id : 'usuario1',
    pass: 'usu1',
-   reservas : [
-      peliculas.dragonBall.asientosT1[1]
+   reservas : [ // Esto tendra todas las reservas del usuario
+     peliculas.dragonBall.asientosT1[0]
    ]
 }
 
@@ -15,4 +15,6 @@ const usuario2 = {
 
    ]
 }
-console.log(usuario1)
+
+// Esto realiza el export, el default es necesario para que no dé errores
+export default {usuario1, usuario2}
