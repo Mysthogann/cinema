@@ -1,0 +1,13 @@
+{
+  "name": "nodecinema",
+  "version": "1.0.0",
+  "description": "Primer commmit: Mas que todo pura estructura del diseño (Todo CSS, HTML y imagenes), programacion basica para moverse entre paginas (JS)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

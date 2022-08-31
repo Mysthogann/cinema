@@ -5,7 +5,7 @@ red.addEventListener('click', function(event){
 
 const movie1 = document.getElementById('mov1');
 movie1.addEventListener('click', function(event){
-   location.href = "indexDB.html"
+   location.href = "infoDB.html"
 });
 
 const movie2 = document.getElementById('mov2');

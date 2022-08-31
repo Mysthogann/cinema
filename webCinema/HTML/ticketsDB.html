@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-   <script type="module" src="/webCinema/JS/modulos/DBTickers.mjs" defer></script> 
    <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,9 +10,8 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
    <link rel="stylesheet" href="/webCinema/CSS/styleTickets.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
-   <script type="text/javascript" src="/webCinema/JS/metodos/redirectMain.js" defer></script> 
-   <script type="module/text" src="/webCinema/JS/modulos/DBTickets.mjs" defer></script>
-   <script type="module/text" src="/webCinema/JS/modulos/reservaDB.mjs" defer></script> 
+   <script type="text/javascript" src="/webCinema/JS/redireccion/redirectReserva.js" defer></script> 
+   <script type="text/javascript"  src="/webCinema/JS/metodos/reservaDB.js" defer></script> 
 
    <title>Moviecinema</title>
 </head>
@@ -47,6 +44,7 @@
    <div class="movie-list-container">
       <h1 id="hola" class="movie-list-title">Compra y reserva de asientos</h1>
       <div class="movie-list-item-desc">Hora: 17:30 PM</div>
+      <div id="movie" class="movie-list-item-desc" value="6">Valor por entrada: ($6)</div>
       <div id="peli" class="movie-list-item-desc"></div> <!-- Detalles del nombre-->
       <div class="movie-list-wrapper">
          <div class="movie-list">
@@ -74,11 +72,11 @@
                               <div class="screen"></div><!-- Pantalla CSS-->
                               <div id="asientos" class="row"></div>
                               <div class="row"> 
-                                 <div class="seat" onclick="campoSelect()"></div>
-                                 <div class="seat" onclick="campoSelect()"></div>
-                                 <div class="seat" onclick="campoSelect()"></div>
-                                 <div class="seat" onclick="campoSelect()"></div>
-                                 <div class="seat" onclick="campoSelect()"></div>
+                                 <div class="seat"></div>
+                                 <div class="seat"></div>
+                                 <div class="seat"></div>
+                                 <div class="seat"></div>
+                                 <div class="seat"></div>
                                  <div class="seat"></div>
                                  <div class="seat"></div>
                                  <div class="seat"></div>
@@ -159,10 +157,11 @@
                               </div>
                         </div>
                         <div class="total-descr">
-                           <p class="text">Se han seleccionado <span id="count">0</span> asientos por el precio de ₡<span
+                           <p class="text">Se han seleccionado <span id="count">0</span> asientos por el precio de $<span
                               id="total">0</span>
                         </div>
                      </div>
+                     <button id="reserva" class="btn">Reservar</button>
             </div>
          </div>
       </div>

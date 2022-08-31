@@ -9,12 +9,13 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-   <link rel="stylesheet" href="/webCinema/CSS/style.css">
+   <link rel="stylesheet" href="/webCinema/CSS/styleMovies.css">
    <script src="https://code.jquery.com/jquery-1.9.1.min.js" defer></script>
-   <script type="module" src="/webCinema/JS/modulos/index.mjs" defer></script>
-   <script type="text/javascript" src="/webCinema/JS/redireccion/redirectMain.js" defer></script>
+   <script type="module" src="/webCinema/JS/modulos/indexDB.mjs" defer></script>  
+   <script type="text/javascript" src="/webCinema/JS/redireccion/redirectInfo.js" defer></script>
    <title>Moviecinema</title>
 </head>
+
 <body>
    <div class="navbar">
       <div class="navbar-container">
@@ -40,33 +41,27 @@
          </div>
       </div>
    </div>
-
    <div class="movie-list-container">
-      <h1 class="movie-list-title">Peliculas</h1>
+      <h1 id="hola" class="movie-list-title">Horarios</h1>
       <div class="movie-list-wrapper">
-         <div class="movie-list" >
+         <div class="movie-list">
             <div class="movie-list-item">
-               <h1 id="db" class="movie-list-item-title"></h1>
-               <img id="mov1" class="movie-list-item-img" src="/webCinema/img/dragon_ball1.webp" alt="">            
+               <img id="redirect" class="movie-list-item-img" src="/webCinema/img/dragon_ball1.webp" alt="">
             </div>
-            <div class="movie-list-item">
-               <h1 id="ant" class="movie-list-item-title"></h1>
-               <img id="mov2" class="movie-list-item-img" src="/webCinema/img/ant_man.jpeg" alt="">
-            </div>
-            <div class="movie-list-item">
-               <h1 id="thor" class="movie-list-item-title"></h1>
-               <img id="mov3" class="movie-list-item-img" src="/webCinema/img/thor_love.jpg" alt="">
-            </div>
-            <div class="movie-list-item">
-               <h1 id="tb" class="movie-list-item-title"></h1>
-               <img id="mov4" class="movie-list-item-img" src="/webCinema/img/tren_bala.jpg" alt="">
+            <div class="movie-info">
+               <h1 id="db" class="movie-list-item-title" style="margin-top:110px;"><h1>
+                     <div id="dbdesc" class="movie-list-item-desc"></div>
+                     <h1 class="movie-list-item-title" style="margin-top:40px; ">Horarios disponibles<h1></h1>
+                        <ul id="movTime1" class="avaliable-hours">17:30pm</ul>
+                        <button class="btn"> <a href="https://www.youtube.com/watch?v=0lXtaS0JBhc" target="_blank">Ver el trailer</a></button>
             </div>
          </div>
       </div>
    </div>
+   </div>   
    <div class="pre-footer" style="height: 400px"></div>
    <div class="footer">
       <p>Footer</p>
-    </div>
+   </div>
 </body>
 </html>

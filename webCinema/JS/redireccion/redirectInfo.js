@@ -5,5 +5,5 @@ red.addEventListener('click', function(event){
 
 const movieTime1 = document.getElementById('movTime1');
 movieTime1.addEventListener('click', function(event){
-   location.href = "DBTickets.html"
+   location.href = "ticketsDB.html"
 });
